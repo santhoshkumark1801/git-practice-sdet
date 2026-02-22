@@ -1,0 +1,33 @@
+# CODEOWNERS — Automatic PR Reviewer Assignment
+# =====================================================
+# Format: <file pattern>   <GitHub username(s) or team>
+# When a PR changes a matching file, these people are auto-requested for review.
+# With branch protection ON, their approval is REQUIRED to merge.
+#
+# Patterns use gitignore rules (most specific match wins).
+# Replace @username placeholders with your real GitHub usernames/teams.
+# =====================================================
+
+# ─── Default: all files require QA lead review ──────────────────
+*                               @your-github-username
+
+# ─── All test files — QA team must review ────────────────────────
+**/*test*.py                    @qa-team-lead
+
+# ─── API tests — backend team + QA ──────────────────────────────
+01_branching/api_tests.py       @backend-lead @qa-team-lead
+
+# ─── Payment tests — sensitive, multiple reviewers ───────────────
+03_merging/payment_tests.py     @backend-lead @qa-team-lead
+
+# ─── GitHub Actions / CI ─────────────────────────────────────────
+.github/                        @devops-lead @qa-team-lead
+
+# ─── Configuration files ─────────────────────────────────────────
+*.yml                           @devops-lead
+*.yaml                          @devops-lead
+.gitignore                      @your-github-username
+
+# ─── Docs ────────────────────────────────────────────────────────
+README.md                       @your-github-username
+**/*.md                         @your-github-username
