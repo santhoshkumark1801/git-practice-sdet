@@ -1,6 +1,7 @@
 """
 buggy_tests.py - A test file with intentional issues to practice revert/reset.
 """
+## command to run tests: pytest buggy_tests.py
 
 import pytest
 
