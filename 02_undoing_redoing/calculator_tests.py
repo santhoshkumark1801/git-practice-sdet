@@ -2,6 +2,7 @@
 calculator_tests.py - Practice file for undoing/redoing exercises.
 Make changes here to practice git restore, reset, and revert.
 """
+##Command to run tests: pytest calculator_tests.py
 
 import pytest
 
