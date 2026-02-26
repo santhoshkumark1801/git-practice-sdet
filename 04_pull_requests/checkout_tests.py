@@ -2,7 +2,7 @@
 checkout_tests.py - Sample test file for PR exercises.
 Practice opening, reviewing, and merging pull requests using this file.
 """
-
+# Command to run tests: pytest checkout_tests.py
 import pytest
 
 

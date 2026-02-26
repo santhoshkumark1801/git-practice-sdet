@@ -8,7 +8,7 @@ import pytest
 # ============================================================
 # Configuration — edit this line to create merge conflicts!
 # ============================================================
-TIMEOUT = 30           # <-- Both Exercise 3.4 teammates will edit this line!
+TIMEOUT = 45           # <-- Both Exercise 3.4 teammates will edit this line!
 RETRY_COUNT = 3
 BASE_URL = "https://payments.example.com/api"
 
